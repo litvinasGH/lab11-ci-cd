@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form | CI/CD Lab 11</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="page">
+      <section class="card" aria-labelledby="form-title">
+        <p class="eyebrow">CI/CD Lab 11</p>
+        <h1 id="form-title">Contact form</h1>
+        <p class="description">Leave your name and email to send the form.</p>
+
+        <form id="contact-form" novalidate>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" autocomplete="name">
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email">
+
+          <button type="submit">Submit</button>
+        </form>
+
+        <p id="form-message" class="message" role="alert" aria-live="polite"></p>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

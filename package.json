@@ -1,0 +1,21 @@
+{
+  "name": "lab11-ci-cd",
+  "version": "1.0.0",
+  "description": "Simple web form project for demonstrating CI/CD with GitHub Actions.",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "test": "jest --runInBand"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "selenium-webdriver": "^4.27.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": [
+      "**/tests/**/*.test.js"
+    ],
+    "testTimeout": 30000
+  }
+}
